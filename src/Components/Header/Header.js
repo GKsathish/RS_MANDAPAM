@@ -1,48 +1,55 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import './Login.css';
+import './Header.css';
 
 const Header = () => {
   return (
-    <div>
+    
    
-         <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+         <nav className="navbar navbar-expand-lg navbar-light  " style={{backgroundColor:'#e72e77' ,height:'40px',padding:'10px' }}> 
   <div className="container-fluid ">
-    <Link className="navbar-brand" to="/">RS MANDAPAM </Link>
+    <Link className="navbar-brand fs-3" to="/">RS WEDS </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-Events          </Link>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link  className="dropdown-item" to="/">Sangeeth Event</Link></li>
-            <li><Link className="dropdown-item" to="/">Mehindi Event</Link></li>
-            <li><Link className="dropdown-item" to="/">Game Event</Link></li>
-          </ul>
+          <Link className="nav-link active fs-6" aria-current="page" to="/">Venues</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/About">About</Link>
+          <Link className="nav-link fs-6" aria-current="page" to="/">Vendors</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link  fs-6" aria-current="page" to="/">Photos</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link  fs-6 " aria-current="page" to="/">Real Weddings</Link>
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link" to="/Contact">Contact Us</Link>
+          <Link className="nav-link  fs-6"  to="/About">Blog</Link>
+        </li>
+        
+        <li className="nav-item">
+          <Link className="nav-link fs-6" to="/Contact">Shop</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link  fs-6" to="/Contact">E-invites</Link>
         </li>
       </ul>
-      <form className="d-flex">   
-        <button className="btn btn-outline-success m-d-2" type="submit">Log out</button>
-      </form>
+       
+      <li className='list-unstyled'>
+      <Link className="" type="submit">Log in</Link>
+      </li>
+       
+    
     </div>
   </div>
 </nav>   
       
         
-    </div>
+  
   )
 }
 

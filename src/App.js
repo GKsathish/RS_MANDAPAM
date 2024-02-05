@@ -4,7 +4,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import ContactUs from "./Components/ContactUs/ContactUs";
-// import Header from "./Components/Header/Header";
+ import Headerm from "./Components/Headerm/Headerm";
 
 import './App.css';
 
@@ -12,7 +12,8 @@ const App = () => {
   return (
     <>
      <BrowserRouter>
-   <Header/>
+     <Headerm/>
+    <Header/>
 
     <Routes>
      <Route path="/" element={<Home/>} />

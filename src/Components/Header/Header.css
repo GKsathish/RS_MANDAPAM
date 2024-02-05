@@ -1,0 +1,14 @@
+
+.navbar-nav .nav-link {
+      transition: color 0.1s ease-in-out;
+      margin: 20px; /* Adjust spacing between navbar items */
+      font-size: 14px !important;
+    }
+    
+    .navbar-nav .nav-link:hover
+     {
+      color: #fff; /* Change color on hover and when active */
+      text-decoration: underline; /* Add underline on hover and when active */
+      padding: 5px; /* Adjust distance between text and underline */
+    }
+    
